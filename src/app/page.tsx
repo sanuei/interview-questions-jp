@@ -43,7 +43,7 @@ export default function HomePage() {
     })
   }, [selectedCategory, sortBy, getRating])
 
-  const categoryIconMap: Record<string, any> = {
+  const categoryIconMap: Record<string, typeof User> = {
     general: User,
     'japan-specific': Building2,
     technical: Code

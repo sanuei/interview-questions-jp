@@ -10,7 +10,7 @@ export function useRating() {
     const savedRatings = localStorage.getItem('question-ratings')
     if (savedRatings) {
       try {
-        const parsedRatings = JSON.parse(savedRatings).map((rating: any) => ({
+        const parsedRatings = JSON.parse(savedRatings).map((rating: { questionId: string; rating: number; timestamp: string }) => ({
           ...rating,
           timestamp: new Date(rating.timestamp)
         }))

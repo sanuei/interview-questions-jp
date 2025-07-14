@@ -1,8 +1,8 @@
 'use client'
 
-import { Search, SlidersHorizontal } from 'lucide-react'
+import { SlidersHorizontal } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Language, Difficulty } from '@/types'
+import { Language } from '@/types'
 import { cn } from '@/lib/utils'
 
 interface SearchAndFilterProps {
