@@ -197,6 +197,45 @@ export const categories: Category[] = [
         },
         icon: 'Brain',
         color: 'bg-violet-500'
+      },
+      {
+        id: 'react',
+        name: {
+          zh: 'React技术',
+          ja: 'React技術'
+        },
+        description: {
+          zh: 'React框架、Hooks、组件设计、状态管理',
+          ja: 'Reactフレームワーク、Hooks、コンポーネント設計、状態管理'
+        },
+        icon: 'Atom',
+        color: 'bg-cyan-600'
+      },
+      {
+        id: 'aws',
+        name: {
+          zh: 'AWS云服务',
+          ja: 'AWSクラウドサービス'
+        },
+        description: {
+          zh: 'AWS核心服务、云架构、部署运维',
+          ja: 'AWSコアサービス、クラウドアーキテクチャ、デプロイ運用'
+        },
+        icon: 'Cloud',
+        color: 'bg-orange-600'
+      },
+      {
+        id: 'scripting',
+        name: {
+          zh: '脚本语言',
+          ja: 'スクリプト言語'
+        },
+        description: {
+          zh: 'Shell、Python、PowerShell、自动化脚本',
+          ja: 'Shell、Python、PowerShell、自動化スクリプト'
+        },
+        icon: 'Terminal',
+        color: 'bg-emerald-600'
       }
     ]
   }

@@ -136,7 +136,7 @@ export default function HomePage({ language, onStartStudy, onViewAllQuestions }:
       <section className="relative py-24 px-4">
         <div className="container mx-auto max-w-6xl text-center">
           <div className="mb-8">
-            <Badge className="mb-6 text-sm px-6 py-2 bg-gray-100 text-gray-700 border border-gray-200 rounded-full">
+            <Badge className="mb-6 text-sm px-6 py-2 bg-gray-100 text-gray-700 border border-gray-200 rounded-full hover:bg-gray-100 hover:text-gray-700">
               {language === 'zh' ? '🚀 全新IT面试准备平台' : '🚀 新しいIT面接準備プラットフォーム'}
             </Badge>
           </div>
