@@ -42,7 +42,7 @@ export function CategoryCard({
     <Card 
       className={cn(
         "cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1 group",
-        isSelected && "ring-2 ring-blue-500 shadow-lg",
+        isSelected && "ring-2 ring-gray-400 shadow-lg",
         className
       )}
       onClick={onClick}
@@ -54,7 +54,7 @@ export function CategoryCard({
         )}>
           <Icon className="w-6 h-6 text-white" />
         </div>
-        <CardTitle className="text-lg group-hover:text-blue-600 transition-colors">
+        <CardTitle className="text-lg group-hover:text-gray-700 transition-colors">
           {getTitle()}
         </CardTitle>
         <CardDescription>

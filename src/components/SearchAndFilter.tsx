@@ -19,10 +19,10 @@ export function SearchAndFilter({
   className
 }: SearchAndFilterProps) {
   return (
-    <div className={cn("flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg border", className)}>
+    <div className={cn("flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 bg-white rounded-lg border", className)}>
       <div className="flex items-center gap-2 flex-1">
         <SlidersHorizontal className="w-4 h-4 text-gray-500" />
-        <span className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">
+        <span className="text-sm font-medium text-gray-700 whitespace-nowrap">
           {language === 'zh' ? '排序方式：' : 'ソート：'}
         </span>
         <div className="flex gap-2 flex-wrap">
