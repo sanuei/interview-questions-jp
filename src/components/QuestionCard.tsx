@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ChevronDown, ChevronUp, Tag, Languages, Volume2, VolumeX, Loader2 } from 'lucide-react'
+import { ChevronDown, ChevronUp, Tag, Languages, Volume2, Loader2 } from 'lucide-react'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { StarRating } from '@/components/StarRating'

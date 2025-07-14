@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Volume2, Settings, Play, Pause } from 'lucide-react'
+import { Settings, Play, Pause } from 'lucide-react'
 import { ttsService, TTSOptions, TTSVoice } from '@/lib/ttsService'
 import { Language } from '@/types'
 
@@ -27,14 +27,7 @@ export function TTSSettings({ language, onClose }: TTSSettingsProps) {
     ja: 'これはテスト用のテキストで、音声効果を試聴するためのものです。'
   }
 
-  useEffect(() => {
-    // 加载当前设置
-    const currentService = ttsService.getRecommendedService()
-    setSelectedService(currentService)
-    loadVoices(currentService)
-  }, [])
-
-  const loadVoices = async (service: TTSOptions['service']) => {
+  const loadVoices = useCallback(async (service: TTSOptions['service']) => {
     try {
       setIsLoading(true)
       const voices = await ttsService.getAvailableVoices(service)
@@ -50,7 +43,14 @@ export function TTSSettings({ language, onClose }: TTSSettingsProps) {
     } finally {
       setIsLoading(false)
     }
-  }
+  }, [language])
+
+  useEffect(() => {
+    // 加载当前设置
+    const currentService = ttsService.getRecommendedService()
+    setSelectedService(currentService)
+    loadVoices(currentService)
+  }, [loadVoices])
 
   const handleServiceChange = (service: TTSOptions['service']) => {
     setSelectedService(service)
