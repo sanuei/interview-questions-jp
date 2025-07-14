@@ -88,63 +88,115 @@ export const categories: Category[] = [
           ja: 'Java開発'
         },
         description: {
-          zh: 'Java编程语言相关问题',
-          ja: 'Javaプログラミング言語に関する質問'
+          zh: 'Java核心概念、Spring框架、JVM调优等',
+          ja: 'Javaコア概念、Springフレームワーク、JVMチューニングなど'
         },
         icon: 'Coffee',
         color: 'bg-orange-500'
       },
       {
-        id: 'react',
+        id: 'frontend',
         name: {
-          zh: 'React前端',
-          ja: 'Reactフロントエンド'
+          zh: '前端开发',
+          ja: 'フロントエンド開発'
         },
         description: {
-          zh: 'React框架开发相关问题',
-          ja: 'Reactフレームワーク開発に関する質問'
+          zh: 'React、Vue、JavaScript、CSS、HTML等前端技术',
+          ja: 'React、Vue、JavaScript、CSS、HTMLなどフロントエンド技術'
         },
-        icon: 'Atom',
+        icon: 'Monitor',
         color: 'bg-cyan-500'
       },
       {
-        id: 'aws',
+        id: 'backend',
         name: {
-          zh: 'AWS云服务',
-          ja: 'AWSクラウドサービス'
+          zh: '后端开发',
+          ja: 'バックエンド開発'
         },
         description: {
-          zh: 'Amazon Web Services相关问题',
-          ja: 'Amazon Web Servicesに関する質問'
+          zh: 'Node.js、Python、API设计、微服务架构',
+          ja: 'Node.js、Python、API設計、マイクロサービスアーキテクチャ'
+        },
+        icon: 'Server',
+        color: 'bg-indigo-500'
+      },
+      {
+        id: 'database',
+        name: {
+          zh: '数据库技术',
+          ja: 'データベース技術'
+        },
+        description: {
+          zh: 'SQL、NoSQL、数据库设计、性能优化',
+          ja: 'SQL、NoSQL、データベース設計、パフォーマンス最適化'
+        },
+        icon: 'Database',
+        color: 'bg-purple-500'
+      },
+      {
+        id: 'cloud',
+        name: {
+          zh: '云计算技术',
+          ja: 'クラウドコンピューティング技術'
+        },
+        description: {
+          zh: 'AWS、Azure、GCP、Kubernetes、Docker',
+          ja: 'AWS、Azure、GCP、Kubernetes、Docker'
         },
         icon: 'Cloud',
         color: 'bg-yellow-500'
       },
       {
-        id: 'docker',
+        id: 'system-design',
         name: {
-          zh: 'Docker容器',
-          ja: 'Dockerコンテナ'
+          zh: '系统设计',
+          ja: 'システム設計'
         },
         description: {
-          zh: 'Docker容器化技术问题',
-          ja: 'Dockerコンテナ化技術の質問'
+          zh: '架构设计、负载均衡、分布式系统、扩展性',
+          ja: 'アーキテクチャ設計、ロードバランシング、分散システム、スケーラビリティ'
         },
-        icon: 'Box',
-        color: 'bg-blue-500'
+        icon: 'Network',
+        color: 'bg-red-500'
       },
       {
-        id: 'sql',
+        id: 'devops',
         name: {
-          zh: 'SQL数据库',
-          ja: 'SQLデータベース'
+          zh: 'DevOps运维',
+          ja: 'DevOps運用'
         },
         description: {
-          zh: 'SQL数据库相关问题',
-          ja: 'SQLデータベースに関する質問'
+          zh: 'CI/CD、自动化部署、监控、版本控制',
+          ja: 'CI/CD、自動化デプロイ、監視、バージョン管理'
         },
-        icon: 'Database',
-        color: 'bg-purple-500'
+        icon: 'Settings',
+        color: 'bg-green-600'
+      },
+      {
+        id: 'security',
+        name: {
+          zh: '网络安全',
+          ja: 'ネットワークセキュリティ'
+        },
+        description: {
+          zh: '安全漏洞、加密技术、身份认证、安全架构',
+          ja: 'セキュリティ脆弱性、暗号化技術、認証、セキュリティアーキテクチャ'
+        },
+        icon: 'Shield',
+        color: 'bg-rose-500'
+      },
+      {
+        id: 'algorithms',
+        name: {
+          zh: '算法数据结构',
+          ja: 'アルゴリズム・データ構造'
+        },
+        description: {
+          zh: '排序算法、数据结构、复杂度分析、编程题',
+          ja: 'ソートアルゴリズム、データ構造、計算量解析、プログラミング問題'
+        },
+        icon: 'Brain',
+        color: 'bg-violet-500'
       }
     ]
   }
