@@ -3,7 +3,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
-  "regions": ["hnd1", "nrt1"],
+  "regions": ["hnd1", "kix1"],
   "redirects": [
     {
       "source": "/home",
